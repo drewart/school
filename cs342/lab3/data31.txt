@@ -1,0 +1,4 @@
+mouse mickey 8584 55000
+a b 1234 60000
+x y 8000 80000
+moose bullwinkle 1 10000

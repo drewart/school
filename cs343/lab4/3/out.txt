@@ -1,0 +1,268 @@
+~Customer()
+~CommandList()
+~Customer()
+~CommandList()
+  10    0  Casablanca           Michael Curtiz   1942  8 Ingrid Bergman
+  10    0  Casablanca           Michael Curtiz   1942  8 Humphrey Bogart
+  10    0  The Wizard of Oz     Victor Fleming   1939  7 Judy Garland
+  10    0  Sleepless in Seattle Nora Ephron      1993
+  10    0  Good Morning Vietnam Barry Levinson   1988
+  10    0  Good Will Hunting    Gus Van Sant     2000
+  10    0  Annie Hall           Woody Allen      1977
+  10    0  When Harry Met Sally Rob Reiner       1989
+  10    0  King of Hearts       Phillippe De Br  1967
+  10    0  Schindler's List     Steven Spielber  1993
+  10    0  Pirates of the Carib Gore Verbinski   2003
+  10    0  Fargo                Joel Coen        1996
+  10    0  Silence of the Lambs Jonathan Demme   1991
+  10    0  Unforgiven           Clint Eastwood   1992
+  10    0  Harold and Maude     Hal Ashby        1971  3 Ruth Gordon
+Movie Create Failure for line: 
+Z  'Z Hal Ashby, Harold and Maude, Bud Cort 3 1971'
+  10    0  Holiday              George Cukor     1938  9 Katherine Hepburn
+  10    0  Holiday              George Cukor     1938  9 Cary Grant
+  10    0  Gone With the Wind   Victor Fleming   1939  2 Vivien Leigh
+  10    0  Gone With the Wind   Victor Fleming   1939  2 Clark Gable
+  10    0  The Philadelphia Sto George Cukor     1940  5 Katherine Hepburn
+  10    0  The Philadelphia Sto George Cukor     1940  5 Cary Grant
+  10    0  The Maltese Falcon   John Huston      1941  0 Humphrey Bogart 
+Movie Create Failure for line: 
+Z  'Z Frank Capra, It's a Wonderful Life, James Steward 11 1946'
+  10    0  It's a Wonderful Lif Frank Capra      1946  1 James Steward 
+  10    0  It's a Wonderful Lif Frank Capra      1946  1 Donna Reed 
+  10    0  A Clockwork Orange   Stanley Kubrick  1971  2 Malcolm McDowell
+  10    0  National Lampoon's A John Landis      1978
+  10    0  Dogfight             Nancy Savoca     1991
+  10    0  You've Got Mail      Nora Ephron      1998
+Command Create Error for Line:X 
+Command Create Error for Line:Z  1000 D C 10 1941 Humphrey Bogart
+Command Data Error: bad media type
+Command Data Error: 
+*IN* *OUT*
+ DVD  DVD  TITLE                DIRECTOR         YEAR MO ACTOR
+  10    0  The Maltese Falcon   John Huston      1941  0 Humphrey Bogart 
+  10    0  It's a Wonderful Lif Frank Capra      1946  1 Donna Reed 
+  10    0  It's a Wonderful Lif Frank Capra      1946  1 James Steward 
+  10    0  Gone With the Wind   Victor Fleming   1939  2 Clark Gable
+  10    0  Gone With the Wind   Victor Fleming   1939  2 Vivien Leigh
+  10    0  A Clockwork Orange   Stanley Kubrick  1971  2 Malcolm McDowell
+  10    0  Harold and Maude     Hal Ashby        1971  3 Ruth Gordon
+  10    0  The Philadelphia Sto George Cukor     1940  5 Cary Grant
+  10    0  The Philadelphia Sto George Cukor     1940  5 Katherine Hepburn
+  10    0  The Wizard of Oz     Victor Fleming   1939  7 Judy Garland
+  10    0  Casablanca           Michael Curtiz   1942  8 Humphrey Bogart
+  10    0  Casablanca           Michael Curtiz   1942  8 Ingrid Bergman
+  10    0  Holiday              George Cukor     1938  9 Cary Grant
+  10    0  Holiday              George Cukor     1938  9 Katherine Hepburn
+  10    0  Good Morning Vietnam Barry Levinson   1988
+  10    0  Unforgiven           Clint Eastwood   1992
+  10    0  Good Will Hunting    Gus Van Sant     2000
+  10    0  Silence of the Lambs Jonathan Demme   1991
+  10    0  Dogfight             Nancy Savoca     1991
+  10    0  King of Hearts       Phillippe De Br  1967
+  10    0  Schindler's List     Steven Spielber  1993
+  10    0  Annie Hall           Woody Allen      1977
+  10    0  Fargo                Joel Coen        1996
+  10    0  National Lampoon's A John Landis      1978
+  10    0  Pirates of the Carib Gore Verbinski   2003
+  10    0  Sleepless in Seattle Nora Ephron      1993
+  10    0  When Harry Met Sally Rob Reiner       1989
+  10    0  You've Got Mail      Nora Ephron      1998
+
+*IN* *OUT*
+ DVD  DVD  TITLE                DIRECTOR         YEAR MO ACTOR
+  10    0  The Maltese Falcon   John Huston      1941  0 Humphrey Bogart 
+  10    0  It's a Wonderful Lif Frank Capra      1946  1 Donna Reed 
+  10    0  It's a Wonderful Lif Frank Capra      1946  1 James Steward 
+  10    0  Gone With the Wind   Victor Fleming   1939  2 Clark Gable
+  10    0  Gone With the Wind   Victor Fleming   1939  2 Vivien Leigh
+  10    0  A Clockwork Orange   Stanley Kubrick  1971  2 Malcolm McDowell
+  10    0  Harold and Maude     Hal Ashby        1971  3 Ruth Gordon
+  10    0  The Philadelphia Sto George Cukor     1940  5 Cary Grant
+  10    0  The Philadelphia Sto George Cukor     1940  5 Katherine Hepburn
+  10    0  The Wizard of Oz     Victor Fleming   1939  7 Judy Garland
+  10    0  Casablanca           Michael Curtiz   1942  8 Humphrey Bogart
+  10    0  Casablanca           Michael Curtiz   1942  8 Ingrid Bergman
+  10    0  Holiday              George Cukor     1938  9 Cary Grant
+  10    0  Holiday              George Cukor     1938  9 Katherine Hepburn
+  10    0  Good Morning Vietnam Barry Levinson   1988
+  10    0  Unforgiven           Clint Eastwood   1992
+  10    0  Good Will Hunting    Gus Van Sant     2000
+  10    0  Silence of the Lambs Jonathan Demme   1991
+  10    0  Dogfight             Nancy Savoca     1991
+  10    0  King of Hearts       Phillippe De Br  1967
+  10    0  Schindler's List     Steven Spielber  1993
+  10    0  Annie Hall           Woody Allen      1977
+  10    0  Fargo                Joel Coen        1996
+  10    0  National Lampoon's A John Landis      1978
+  10    0  Pirates of the Carib Gore Verbinski   2003
+  10    0  Sleepless in Seattle Nora Ephron      1993
+  10    0  When Harry Met Sally Rob Reiner       1989
+  10    0  You've Got Mail      Nora Ephron      1998
+
+Unable to find customer with id 1000
+Unable to find customer with Id: 1000
+Error Running Command: 
+Unable to find customer with id 1000
+Unable to find customer with Id: 1000
+Error Running Command: 
+Unable to find customer with id 1000
+Unable to find customer with Id: 1000
+Error Running Command: 
+Unable to find customer with id 5000
+Unable to find customer with Id: 5000
+Error Running Command: 
+Unable to find customer with id 1000
+Unable to find customer with Id: 1000
+Error Running Command: 
+Unable to find customer with id 1000
+Unable to find customer with Id: 1000
+Error Running Command: 
+Unable to find customer with id 1000
+Unable to find customer with Id: 1000
+Error Running Command: 
+Unable to find customer with id 1000
+Unable to find customer with Id: 1000
+Error Running Command: 
+Unable to find customer with id 2000
+Unable to find customer with Id: 2000
+Error Running Command: 
+Unable to find customer with id 1000
+Unable to find customer with Id: 1000
+Error Running Command: 
+
+*IN* *OUT*
+ DVD  DVD  TITLE                DIRECTOR         YEAR MO ACTOR
+  10    0  The Maltese Falcon   John Huston      1941  0 Humphrey Bogart 
+  10    0  It's a Wonderful Lif Frank Capra      1946  1 Donna Reed 
+  10    0  It's a Wonderful Lif Frank Capra      1946  1 James Steward 
+  10    0  Gone With the Wind   Victor Fleming   1939  2 Clark Gable
+  10    0  Gone With the Wind   Victor Fleming   1939  2 Vivien Leigh
+  10    0  A Clockwork Orange   Stanley Kubrick  1971  2 Malcolm McDowell
+  10    0  Harold and Maude     Hal Ashby        1971  3 Ruth Gordon
+  10    0  The Philadelphia Sto George Cukor     1940  5 Cary Grant
+  10    0  The Philadelphia Sto George Cukor     1940  5 Katherine Hepburn
+  10    0  The Wizard of Oz     Victor Fleming   1939  7 Judy Garland
+  10    0  Casablanca           Michael Curtiz   1942  8 Humphrey Bogart
+  10    0  Casablanca           Michael Curtiz   1942  8 Ingrid Bergman
+  10    0  Holiday              George Cukor     1938  9 Cary Grant
+  10    0  Holiday              George Cukor     1938  9 Katherine Hepburn
+  10    0  Good Morning Vietnam Barry Levinson   1988
+  10    0  Unforgiven           Clint Eastwood   1992
+  10    0  Good Will Hunting    Gus Van Sant     2000
+  10    0  Silence of the Lambs Jonathan Demme   1991
+  10    0  Dogfight             Nancy Savoca     1991
+  10    0  King of Hearts       Phillippe De Br  1967
+  10    0  Schindler's List     Steven Spielber  1993
+  10    0  Annie Hall           Woody Allen      1977
+  10    0  Fargo                Joel Coen        1996
+  10    0  National Lampoon's A John Landis      1978
+  10    0  Pirates of the Carib Gore Verbinski   2003
+  10    0  Sleepless in Seattle Nora Ephron      1993
+  10    0  When Harry Met Sally Rob Reiner       1989
+  10    0  You've Got Mail      Nora Ephron      1998
+
+Unable to find customer with id 1000
+Unable to find customer with Id: 1000
+Error Running Command: 
+Unable to find customer with id 1111
+Unable to find customer with Id: 1111
+Error Running Command: 
+~MovieClassic()
+~Movie()
+~Item() 31
+~MovieClassic()
+~Movie()
+~Item() 30
+~MovieClassic()
+~Movie()
+~Item() 29
+~MovieComedy()
+~Movie()
+~Item() 28
+~MovieDrama()
+~Movie()
+~Item() 27
+~MovieDrama()
+~Movie()
+~Item() 26
+~MovieComedy()
+~Movie()
+~Item() 25
+~MovieComedy()
+~Movie()
+~Item() 24
+~MovieDrama()
+~Movie()
+~Item() 23
+~MovieDrama()
+~Movie()
+~Item() 22
+~MovieComedy()
+~Movie()
+~Item() 21
+~MovieComedy()
+~Movie()
+~Item() 20
+~MovieDrama()
+~Movie()
+~Item() 19
+~MovieDrama()
+~Movie()
+~Item() 18
+~MovieClassic()
+~Movie()
+~Item() 17
+~MovieClassic()
+~Movie()
+~Item() 16
+~MovieClassic()
+~Movie()
+~Item() 15
+~MovieClassic()
+~Movie()
+~Item() 14
+~MovieClassic()
+~Movie()
+~Item() 13
+~MovieClassic()
+~Movie()
+~Item() 12
+~MovieClassic()
+~Movie()
+~Item() 11
+~MovieClassic()
+~Movie()
+~Item() 10
+~MovieClassic()
+~Movie()
+~Item() 9
+~MovieClassic()
+~Movie()
+~Item() 8
+~MovieClassic()
+~Movie()
+~Item() 7
+~MovieComedy()
+~Movie()
+~Item() 6
+~MovieDrama()
+~Movie()
+~Item() 5
+~MovieComedy()
+~Movie()
+~Item() 4
+~MovieClassic()
+~Movie()
+~Item() 3
+~MovieDrama()
+~Movie()
+~Item() 2
+~MovieComedy()
+~Movie()
+~Item() 1
+~MovieStore()
+~ItemTree()
+~Store()
+~CommandList()
+~CommandQueue()

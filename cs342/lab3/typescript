@@ -1,0 +1,232 @@
+mylist:
+10 f
+16 u
+20 n
+25 !
+
+mylist2:
+14 s
+15 t
+16 u
+18 f
+19 f
+25 !
+
+mylist3:
+16 u
+25 !
+
+==TEST:
+equal
+TEST insert:
+inserted
+==TEST!=:
+NOT equal
+company99:
+   1      1  a a
+   1      1  b b
+  99     99  z z
+
+found:   99     99  z z
+
+removed:   99     99  z z
+
+company99:
+   1      1  a a
+   1      1  b b
+
+removed:    1      1  b b
+
+company99:
+   1      1  a a
+
+removed:    1      1  a a
+
+company99:
+
+empty
+3:
+3452  50001  frank1 mickey1
+4551 100001  jones1 brad1
+   1 100003  moose bullwinkle
+   2 100002  squirrel rocky
+
+same Data Pointer
+NOT hasSameDataPointer
+same check1
+Does NOT have same pointer
+same check2
+Does NOT have same pointer
+test -- merge 1 and 2 into 5
+----------------------------
+Company1:
+1234  60000  a b
+8584  55000  mouse mickey
+8000  80000  x y
+
+Company2:
+ 101  80000  Pierce Drew
+1234  60000  a b
+8584  55000  mouse mickey
+8000  80000  x y
+
+company1 is empty
+company2 is empty
+Company5:
+ 101  80000  Pierce Drew
+1234  60000  a b
+1234  60000  a b
+8584  55000  mouse mickey
+8584  55000  mouse mickey
+8000  80000  x y
+8000  80000  x y
+
+test == 
+--------
+company3
+3452  50001  frank1 mickey1
+4551 100001  jones1 brad1
+   1 100003  moose bullwinkle
+   2 100002  squirrel rocky
+
+company10
+3452  50001  frank1 mickey1
+4551 100001  jones1 brad1
+   1 100003  moose bullwinkle
+   2 100002  squirrel rocky
+
+company11
+3452  50001  frank1 mickey1
+4551 100001  jones1 brad1
+   1 100003  moose bullwinkle
+   2 100002  squirrel rocky
+
+deleteingcompany10 after remove
+3452  50001  frank1 mickey1
+4551 100001  jones1 brad1
+   2 100002  squirrel rocky
+
+same check2
+Does NOT have same pointer
+company11 after 10 remove
+3452  50001  frank1 mickey1
+4551 100001  jones1 brad1
+   1 100003  moose bullwinkle
+   2 100002  squirrel rocky
+
+Company10:
+3452  50001  frank1 mickey1
+4551 100001  jones1 brad1
+   2 100002  squirrel rocky
+
+Company11:
+3452  50001  frank1 mickey1
+4551 100001  jones1 brad1
+   1 100003  moose bullwinkle
+
+company10 does not equal company11
+Company11:
+3452  50001  frank1 mickey1
+4551 100001  jones1 brad1
+
+company10 does not equal company11
+test == and !=: merge 7 and 8 into 9 (same as 5)
+------------------------------------------------
+Company7:
+1234  60000  a b
+8584  55000  mouse mickey
+8000  80000  x y
+
+Company8:
+ 101  80000  Pierce Drew
+1234  60000  a b
+8584  55000  mouse mickey
+8000  80000  x y
+
+Company9:
+ 101  80000  Pierce Drew
+1234  60000  a b
+1234  60000  a b
+8584  55000  mouse mickey
+8584  55000  mouse mickey
+8000  80000  x y
+8000  80000  x y
+
+company5 equals company9
+company5 equals company9
+test -- merge 3 and 4 into 4
+----------------------------
+Company3:
+3452  50001  frank1 mickey1
+4551 100001  jones1 brad1
+   1 100003  moose bullwinkle
+   2 100002  squirrel rocky
+
+Company4:
+8888  50004  frank2 mickey2
+
+company3 is empty
+Company4:
+3452  50001  frank1 mickey1
+8888  50004  frank2 mickey2
+4551 100001  jones1 brad1
+   1 100003  moose bullwinkle
+   2 100002  squirrel rocky
+
+test -- merge empty 3 and 4 into 4, no change to 4
+--------------------------------------------------
+Company3:
+
+Company4:
+3452  50001  frank1 mickey1
+8888  50004  frank2 mickey2
+4551 100001  jones1 brad1
+   1 100003  moose bullwinkle
+   2 100002  squirrel rocky
+
+company3 is empty
+Company4 again (same):
+3452  50001  frank1 mickey1
+8888  50004  frank2 mickey2
+4551 100001  jones1 brad1
+   1 100003  moose bullwinkle
+   2 100002  squirrel rocky
+
+test -- merge 4 and empty 3 into 4, no change to 4
+--------------------------------------------------
+company3 is empty
+Company4 again (same):
+3452  50001  frank1 mickey1
+8888  50004  frank2 mickey2
+4551 100001  jones1 brad1
+   1 100003  moose bullwinkle
+   2 100002  squirrel rocky
+
+test -- merge 6 and empty 3 into 4
+----------------------------------
+company3 is empty
+company6 is empty
+Company4:
+8888  50004  frank2 mickey2
+
+test remove and retrieve on 4
+-----------------------------
+Did not find aaaaa in list
+Did not find zzzzz in list
+Did not find ghost in list
+Did not find rella in list
+Did not find bear in list
+Company4 after removes:
+8888  50004  frank2 mickey2
+
+Test Copy Constructor and Destructor
+------------------------------------
+after emptying, byRefList is: 
+
+byValList is: 
+3452  50001  frank1 mickey1
+4551 100001  jones1 brad1
+   2 100002  squirrel rocky
+
+back in main, Company10:
+

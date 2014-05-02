@@ -1,0 +1,128 @@
+Script started on Fri 01 Jun 2012 11:08:37 PM PDT
+]0;drpier@uw1-320-16:~/cs342/lab5[drpier@uw1-320-16 lab5]$ g++ *.cpp
+]0;drpier@uw1-320-16:~/cs342/lab5[drpier@uw1-320-16 lab5]$ valgrid[Knd ./a.out 
+==10091== Memcheck, a memory error detector
+==10091== Copyright (C) 2002-2009, and GNU GPL'd, by Julian Seward et al.
+==10091== Using Valgrind-3.5.0 and LibVEX; rerun with -h for copyright info
+==10091== Command: ./a.out
+==10091== 
+
+Withdrawal not performed onMoney Market for client 6666
+	insufficient funds
+
+
+Withdrawal not performed onMoney Market for client 6666
+	insufficient funds
+
+Unknown client ID 3000 requested
+
+Withdrawal not performed onPrime Money Market for client 6666
+	insufficient funds
+
+Unknown client ID 9999 requested
+Unknown client ID 1000 or 1234 requested
+Unknown client ID 1111 or 9999 requested
+
+History of transactions for client mickey mouse, client ID = 1234
+Type      Amount  Detail
+--------- ------- --------------------------------------
+deposit   $   100 into Prime Money Market
+move      $  1000 from Prime Money Market
+                  to Long-Term Bond for client 3000
+move      $   500 from Prime Money Market
+                  to Long-Term Bond for client 1234
+withdraw  $    20 from Money Market
+
+
+History of transactions for client minnie mouse, client ID = 3000
+Type      Amount  Detail
+--------- ------- --------------------------------------
+move      $  1000 from Prime Money Market
+                  to Long-Term Bond for client 3000
+deposit   $  1000 into Long-Term Bond
+move      $   500 from Prime Money Market
+                  to Long-Term Bond for client 1234
+move      $  3500 from Money Market
+                  to Prime Money Market for client 3000
+withdraw  $  5000 from Prime Money Market
+withdraw  $   100 from Money Market
+withdraw  $   100 from Money Market
+deposit   $  1000 into Capital Value Fund
+withdraw  $  1000 from Capital Value Fund
+move      $    20 from Money Market
+                  to Prime Money Market for client 3000
+withdraw  $    20 from Prime Money Market
+
+Unknown client ID 9999 requested
+
+REPORT
+
+
+1111  sammy spider
+Initial Balances:   4000   500     0     0     0     0     0     0     0     0
+Final Balances:     4000   500     0     0     0     0     0     0     0     0
+
+1234  mickey mouse
+Initial Balances:  20500  1000     0     0     0     0   500     0     0     0
+Final Balances:    20480   100   500     0     0     0   500     0     0     0
+
+2222  donald duck
+Initial Balances:  10000   500     0     0     0     0     0     0     0     0
+Final Balances:    10000   500     0     0     0     0     0     0     0     0
+
+2500  freddie frog
+Initial Balances:  38000  3000     0     0  2000     0     0     0     0     0
+Final Balances:    38000  3000     0     0  2000 10000     0     0     0     0
+
+3000  minnie mouse
+Initial Balances:  35000  2000 50000   400     0     0  4000     0     0  3000
+Final Balances:    31280     0 52000   400     0     0  4000     0     0  3000
+
+4200  bertha bear
+Initial Balances:   8000  1000     0     0     0     0     0     0     0     0
+Final Balances:     8275  1000     0     0     0     0     0     0     0     0
+
+5555  daffy duck
+Initial Balances:   4500   500     0     0     0     0     0     0     0     0
+Final Balances:      100     0     0     0     0     0     0     0     0     0
+
+6000  porky pig
+Initial Balances:  30000  1000     0     0     0     0     0     0     0     0
+Final Balances:    30000  8000     0     0     0     0     0     0     0     0
+
+6666  darrell donkey
+Initial Balances:     10   100     0     0  1000     0     0     0     0     0
+Final Balances:       30   100     0     0  1000     0     0     0     0     0
+
+7000  wicked witch
+Initial Balances:   5000   300     0     0   500     0     0     0     0     0
+Final Balances:     5000   300     0     0   500     0     0     0     0     0
+
+8888  larry lizard
+Initial Balances:   4500  2000     0     0     0     0     0     0     0     0
+Final Balances:     4500  2000     0     0     0     0     0     0     0     0
+==10091== Conditional jump or move depends on uninitialised value(s)
+==10091==    at 0x804AE45: LinkList<Transaction>::makeEmpty() (in /net/metis/home2/drpier/cs342/lab5/a.out)
+==10091==    by 0x804AE70: LinkList<Transaction>::~LinkList() (in /net/metis/home2/drpier/cs342/lab5/a.out)
+==10091==    by 0x804A9D2: Client::~Client() (in /net/metis/home2/drpier/cs342/lab5/a.out)
+==10091==    by 0x8049A9A: BSTree::clearTreeHelper(BSTree::Node*) (in /net/metis/home2/drpier/cs342/lab5/a.out)
+==10091==    by 0x8049AE0: BSTree::clearTreeHelper(BSTree::Node*) (in /net/metis/home2/drpier/cs342/lab5/a.out)
+==10091==    by 0x8049AC8: BSTree::clearTreeHelper(BSTree::Node*) (in /net/metis/home2/drpier/cs342/lab5/a.out)
+==10091==    by 0x8049B0F: BSTree::makeEmpty() (in /net/metis/home2/drpier/cs342/lab5/a.out)
+==10091==    by 0x8049B2C: BSTree::~BSTree() (in /net/metis/home2/drpier/cs342/lab5/a.out)
+==10091==    by 0x80496CC: Bank::~Bank() (in /net/metis/home2/drpier/cs342/lab5/a.out)
+==10091==    by 0x804B5F2: main (in /net/metis/home2/drpier/cs342/lab5/a.out)
+==10091== 
+==10091== 
+==10091== HEAP SUMMARY:
+==10091==     in use at exit: 0 bytes in 0 blocks
+==10091==   total heap usage: 295 allocs, 295 frees, 22,228 bytes allocated
+==10091== 
+==10091== All heap blocks were freed -- no leaks are possible
+==10091== 
+==10091== For counts of detected and suppressed errors, rerun with: -v
+==10091== Use --track-origins=yes to see where uninitialised values come from
+==10091== ERROR SUMMARY: 2 errors from 1 contexts (suppressed: 15 from 8)
+]0;drpier@uw1-320-16:~/cs342/lab5[drpier@uw1-320-16 lab5]$ exit
+
+Script done on Fri 01 Jun 2012 11:09:01 PM PDT

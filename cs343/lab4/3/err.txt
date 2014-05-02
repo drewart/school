@@ -1,0 +1,175 @@
+==17067== Memcheck, a memory error detector
+==17067== Copyright (C) 2002-2009, and GNU GPL'd, by Julian Seward et al.
+==17067== Using Valgrind-3.5.0 and LibVEX; rerun with -h for copyright info
+==17067== Command: ./a.out
+==17067== 
+==17067== 
+==17067== HEAP SUMMARY:
+==17067==     in use at exit: 1,701 bytes in 69 blocks
+==17067==   total heap usage: 844 allocs, 775 frees, 74,476 bytes allocated
+==17067== 
+==17067== 19 bytes in 1 blocks are possibly lost in loss record 1 of 22
+==17067==    at 0x4006355: operator new(unsigned int) (vg_replace_malloc.c:214)
+==17067==    by 0x40B313A: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4E67: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5009: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B50A4: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5224: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x80493C8: CommandBarrow::CommandBarrow() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8049F3E: CommandFactory::CommandFactory() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A0A6: CommandFactory::getInstance() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A105: CommandFactory::createCommand(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8050628: MovieStoreManager::loadCommands(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804D120: main (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067== 
+==17067== 19 bytes in 1 blocks are possibly lost in loss record 2 of 22
+==17067==    at 0x4006355: operator new(unsigned int) (vg_replace_malloc.c:214)
+==17067==    by 0x40B313A: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4E67: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5009: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B50A4: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5224: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x804AE00: CommandReturn::CommandReturn() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8049F74: CommandFactory::CommandFactory() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A0A6: CommandFactory::getInstance() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A105: CommandFactory::createCommand(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8050628: MovieStoreManager::loadCommands(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804D120: main (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067== 
+==17067== 19 bytes in 1 blocks are possibly lost in loss record 3 of 22
+==17067==    at 0x4006355: operator new(unsigned int) (vg_replace_malloc.c:214)
+==17067==    by 0x40B313A: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4E67: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5009: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B50A4: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5224: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x804AE00: CommandReturn::CommandReturn() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804AE52: CommandReturn::createInstance() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8049D1F: CommandFactory::createCommandImpl(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A111: CommandFactory::createCommand(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8050628: MovieStoreManager::loadCommands(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804D120: main (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067== 
+==17067== 20 bytes in 1 blocks are possibly lost in loss record 4 of 22
+==17067==    at 0x4006355: operator new(unsigned int) (vg_replace_malloc.c:214)
+==17067==    by 0x40B313A: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4E67: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5009: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B50A4: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5224: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x804A5DC: CommandHistory::CommandHistory() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A022: CommandFactory::CommandFactory() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A0A6: CommandFactory::getInstance() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A105: CommandFactory::createCommand(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8050628: MovieStoreManager::loadCommands(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804D120: main (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067== 
+==17067== 22 bytes in 1 blocks are possibly lost in loss record 5 of 22
+==17067==    at 0x4006355: operator new(unsigned int) (vg_replace_malloc.c:214)
+==17067==    by 0x40B313A: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4E67: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5009: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B50A4: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5224: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x804B5D8: CommandShowStore::CommandShowStore() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8049FCB: CommandFactory::CommandFactory() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A0A6: CommandFactory::getInstance() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A105: CommandFactory::createCommand(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8050628: MovieStoreManager::loadCommands(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804D120: main (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067== 
+==17067== 27 bytes in 1 blocks are possibly lost in loss record 7 of 22
+==17067==    at 0x4006355: operator new(unsigned int) (vg_replace_malloc.c:214)
+==17067==    by 0x40B313A: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4E67: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5009: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B50A4: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5224: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x80496E4: CommandBarrow::setData(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x805064E: MovieStoreManager::loadCommands(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804D120: main (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067== 
+==17067== 33 bytes in 1 blocks are possibly lost in loss record 12 of 22
+==17067==    at 0x4006355: operator new(unsigned int) (vg_replace_malloc.c:214)
+==17067==    by 0x40B313A: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B3CD7: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4887: std::string::reserve(unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4AA8: std::string::append(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x408AFC0: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40A48F7: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x804ADA1: CommandReturn::setData(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x805064E: MovieStoreManager::loadCommands(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804D120: main (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067== 
+==17067== 44 bytes in 2 blocks are possibly lost in loss record 13 of 22
+==17067==    at 0x4006355: operator new(unsigned int) (vg_replace_malloc.c:214)
+==17067==    by 0x40B313A: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4E67: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5009: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B50A4: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5224: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x804B5D8: CommandShowStore::CommandShowStore() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804B620: CommandShowStore::createInstance() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8049D1F: CommandFactory::createCommandImpl(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A111: CommandFactory::createCommand(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8050628: MovieStoreManager::loadCommands(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804D120: main (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067== 
+==17067== 80 bytes in 4 blocks are possibly lost in loss record 15 of 22
+==17067==    at 0x4006355: operator new(unsigned int) (vg_replace_malloc.c:214)
+==17067==    by 0x40B313A: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4E67: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5009: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B50A4: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5224: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x804A5DC: CommandHistory::CommandHistory() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A624: CommandHistory::createInstance() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8049D1F: CommandFactory::createCommandImpl(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A111: CommandFactory::createCommand(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8050628: MovieStoreManager::loadCommands(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804D120: main (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067== 
+==17067== 116 bytes in 1 blocks are definitely lost in loss record 18 of 22
+==17067==    at 0x4006355: operator new(unsigned int) (vg_replace_malloc.c:214)
+==17067==    by 0x804F6A0: MovieFactory::getInstance() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804F70D: MovieFactory::createMovie(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x80507D6: MovieStoreManager::loadMovies(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804D10B: main (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067== 
+==17067== 171 bytes in 9 blocks are possibly lost in loss record 20 of 22
+==17067==    at 0x4006355: operator new(unsigned int) (vg_replace_malloc.c:214)
+==17067==    by 0x40B313A: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4E67: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5009: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B50A4: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B5224: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x80493C8: CommandBarrow::CommandBarrow() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804941A: CommandBarrow::createInstance() (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8049D1F: CommandFactory::createCommandImpl(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804A111: CommandFactory::createCommand(char) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x8050628: MovieStoreManager::loadCommands(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804D120: main (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067== 
+==17067== 339 bytes in 9 blocks are possibly lost in loss record 22 of 22
+==17067==    at 0x4006355: operator new(unsigned int) (vg_replace_malloc.c:214)
+==17067==    by 0x40B313A: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B3CD7: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4887: std::string::reserve(unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40B4AA8: std::string::append(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x408AFC0: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x40A48F7: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/libstdc++.so.6.0.8)
+==17067==    by 0x80496C6: CommandBarrow::setData(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x805064E: MovieStoreManager::loadCommands(std::basic_ifstream<char, std::char_traits<char> >&) (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067==    by 0x804D120: main (in /net/metis/home2/drpier/cs343/lab4/a.out)
+==17067== 
+==17067== LEAK SUMMARY:
+==17067==    definitely lost: 116 bytes in 1 blocks
+==17067==    indirectly lost: 0 bytes in 0 blocks
+==17067==      possibly lost: 793 bytes in 31 blocks
+==17067==    still reachable: 792 bytes in 37 blocks
+==17067==         suppressed: 0 bytes in 0 blocks
+==17067== Reachable blocks (those to which a pointer was found) are not shown.
+==17067== To see them, rerun with: --leak-check=full --show-reachable=yes
+==17067== 
+==17067== For counts of detected and suppressed errors, rerun with: -v
+==17067== ERROR SUMMARY: 12 errors from 12 contexts (suppressed: 16 from 8)
