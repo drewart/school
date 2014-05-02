@@ -1,0 +1,39 @@
+processes output:
+
+drpier@uw1-320-05:~/cs430/processes$ g++ processes.cpp -o processes
+drpier@uw1-320-05:~/cs430/processes$ ./processes tty
+7
+drpier@uw1-320-05:~/cs430/processes$ ps -A | grep tty | wc -l
+7
+drpier@uw1-320-05:~/cs430/processes$ ./processes and
+3
+drpier@uw1-320-05:~/cs430/processes$ ps -A | grep and | wc -l
+3
+drpier@uw1-320-05:~/cs430/processes$ ./processes mail
+0
+drpier@uw1-320-05:~/cs430/processes$ ps -A | grep mail | wc -l
+0
+drpier@uw1-320-05:~/cs430/processes$
+
+
+
+Shell output (incompete):
+
+
+
+shell[0]% PingPong abc 100 ; PingPong xyz 100
+running: PingPong abc 100 ; PingPong xyz 100
+arg: 'abc'
+arg: '100'
+arg: ';'
+breakrunning command: 'PingPong' Args:'abc 100'
+threadOS: a new thread (thread=Thread[Thread-7,2,main] tid=2 pid=1)
+arg: 'xyz'
+arg: '100'
+running command: 'PingPong' Args:'xyz 100'
+threadOS: a new thread (thread=Thread[Thread-9,2,main] tid=3 pid=1)
+abc abc abc abc abc abc abc abc abc abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz abc xyz
+shell[1]% xyz xyz xyz xyz xyz xyz xyz xyz xyz
+
+
+

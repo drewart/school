@@ -1,0 +1,10 @@
+
+Shell Testing
+Shell.java is incomplete
+
+I tested my Shell by iterating development and printing out messages of the command
+
+Algorithm for processes.cpp I found not as hard, it was a matter of understanding the standard input and output and using dup2 to redirect the file descriptors
+
+
+
