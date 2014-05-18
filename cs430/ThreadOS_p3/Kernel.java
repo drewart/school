@@ -91,7 +91,7 @@ public class Kernel
             return sysExec((String[]) args);
           case WAIT:
             myTcb = scheduler.getMyTcb();
-            // waitQueue
+            enqueueAndSleep(myTcb.getPid());
             // get the current thread id
             // let the current thread sleep in waitQueue under the
             // condition = this thread id
