@@ -26,7 +26,7 @@ public class SyncQueue
     }
   }
   
-  int enqueueAndSleep(int id)
+  public int enqueueAndSleep(int id)
   {
     if ((id >= 0) && (id < queue.length)) 
     {
@@ -34,15 +34,15 @@ public class SyncQueue
     }
     return -1;
   }
-  
-  void dequeueAndWakeup(int paramInt1, int paramInt2)
+
+    public void dequeueAndWakeup(int id, int tid)
   {
     if ((paramInt1 >= 0) && (paramInt1 < queue.length)) {
       queue[paramInt1].wakeup(paramInt2);
     }
   }
-  
-  void dequeueAndWakeup(int paramInt)
+
+  public void dequeueAndWakeup(int paramInt)
   {
     dequeueAndWakeup(paramInt, 0);
   }

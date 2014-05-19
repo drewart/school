@@ -7,26 +7,29 @@ public class QueueNode
   public QueueNode()
   {
     queue = new Vector();
-    queue.clear();
   }
   
   public synchronized int sleep()
   {
-    if (queue.size() == 0) 
+    if (queue.size() == 0)
     {
-      try
-      {
-        wait();
-      }
-      catch (InterruptedException localInterruptedException) {}
+        try
+        {
+            this.wait();
+        }
+        catch (InterruptedException localInterruptedException) {}
     }
-    Integer localInteger = (Integer)queue.remove(0);
-    return localInteger.intValue();
+    Integer tid = (Integer)queue.remove(0);
+    return tid.intValue();
   }
-  
-  public synchronized void wakeup(int pid)
+
+  /**
+   * thread id
+   * @param tid
+   */
+  public synchronized void wakeup(int tid)
   {
-    queue.add(new Integer(pid));
-    notify();
+    queue.add(new Integer(tid));
+    this.notify();
   }
 }
