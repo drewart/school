@@ -137,7 +137,11 @@ public class Scheduler extends Thread
 		    returnTid( currentTCB.getTid( ) );
 		    continue;
 		}
+
+		//Logger.Log("processing thread id : " + currentTCB.getTid());
+
 		current = currentTCB.getThread( );
+
 		if ( current != null ) {
 		    if ( current.isAlive( ) )
 			current.setPriority( 4 );
@@ -158,7 +162,8 @@ public class Scheduler extends Thread
 		    queue.remove( currentTCB ); // rotate this TCB to the end
 		    queue.add( currentTCB );
 		}
-	    } catch ( NullPointerException e3 ) { };
+	    } catch ( NullPointerException e3 ) {}; 
+            //} catch ( Exception e ) { Logger.Log(e.toString()); }
 	}
     }
 }
