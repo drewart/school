@@ -90,26 +90,28 @@ public class Kernel
           case EXEC:
             return sysExec((String[]) args);
           case WAIT:
-            myTcb = scheduler.getMyTcb();
-            int tid = waitQueue.enqueueAndSleep(myTcb.getTid());
             // get the current thread id
+            myTcb = scheduler.getMyTcb();
             // let the current thread sleep in waitQueue under the
             // condition = this thread id
-            //return OK;            // return a child thread id who woke me up
-	    return tid;
+            int tid = waitQueue.enqueueAndSleep(myTcb.getTid());
+            // return a child thread id who woke me up
+            return tid;
           case EXIT:
-            myTcb = scheduler.getMyTcb();
-            waitQueue.dequeueAndWakeup(myTcb.getPid(),myTcb.getTid());
-            myTcb.setTerminated();
             // get the current thread's parent id
+            myTcb = scheduler.getMyTcb();
             // search waitQueue for and wakes up the thread under the
             // condition = the current thread's parent id
+            waitQueue.dequeueAndWakeup(myTcb.getPid(),myTcb.getTid());
             // tell the Scheduler to delete the current thread (since it is exiting)
+            myTcb.setTerminated();
+            
             return OK;
           case SLEEP:            // sleep a given period of milliseconds
             scheduler.sleepThread(param);            // param = milliseconds
             return OK;
           case RAWREAD:            // read a block of data from disk
+            //ioQueue.
             while (disk.read(param, (byte[]) args) == false);            // busy wait
             while (disk.testAndResetReady() == false);            // busy wait
             return OK;
