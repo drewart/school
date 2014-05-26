@@ -1,4 +1,3 @@
-
 /**
 * SyncQueue class a monitor class
 */
@@ -74,4 +73,5 @@ public class SyncQueue
     dequeueAndWakeup(pid, 0);
   }
 }
+
 

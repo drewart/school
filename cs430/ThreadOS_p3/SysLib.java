@@ -8,7 +8,7 @@ public class SysLib {
 
     public static int join( ) {
         return Kernel.interrupt( Kernel.INTERRUPT_SOFTWARE,
-				 Kernel.WAIT, 0, null );
+                Kernel.WAIT, 0, null );
     }
 
     public static int boot( ) {

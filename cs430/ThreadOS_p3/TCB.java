@@ -1,5 +1,5 @@
 public class TCB
-{
+
   private Thread thread = null;
   private int tid = 0;
   private int pid = 0;
@@ -40,6 +40,7 @@ public class TCB
     return terminated;
   }
 
+
   public synchronized boolean getTerminated()
   {
     return terminated;
@@ -48,10 +49,12 @@ public class TCB
   // added for the file system
   public synchronized int getFd(FileTableEntry entry)
   {
+
     if (entry == null)
     {
       return -1;
     }
+
     for (int i = 3; i < 32; i++)
     {
       if (ftEnt[i] == null)
